@@ -1,0 +1,25 @@
+﻿@model Todo
+<div class="container">
+    <h1 class="text-center lead-1">Edit Your Todo</h1>
+    <form method="post" >
+        <div class="row mt-3">
+            <div class="col-8">
+                <input class="form-control" asp-for="Title" asp-controller="Todo" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+
+            </div>
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary">Update</button>
+
+            </div>
+            <div class="col-2">
+               <a class="btn btn-warning" asp-controller="Todo" asp-action="Index">Cancel</a>
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+</div>
